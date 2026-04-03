@@ -4,6 +4,9 @@ A decision-support prototype that helps CAT aspirants decide which questions to 
 
 🔗 **Live Demo:** https://aaayyuusshhh.github.io/cat-strategy-optimizer/
 
+## Preview
+![App Screenshot](preview.png)
+
 ---
 
 ## Problem
