@@ -1,94 +1,97 @@
 # CAT Attempt Strategy Optimizer
 
-A decision-support prototype that helps CAT aspirants decide which questions to attempt, skip, or prioritize based on their accuracy profile.
+A decision-support prototype that helps CAT aspirants maximize their score by converting accuracy insights into a clear, actionable attempt strategy.
 
 🔗 **Live Demo:** https://aaayyuusshhh.github.io/cat-strategy-optimizer/
 
 ## Preview
+
 ![App Screenshot](preview.png)
 
 ---
 
 ## Problem
 
-Through user conversations, a clear pattern emerged: most CAT aspirants are aware of their strengths and weaknesses, but struggle to use that knowledge during mocks.
+User conversations revealed a consistent and critical gap: most CAT aspirants are aware of their strengths and weaknesses, but fail to apply that awareness during mocks.
 
-Decisions about whether to attempt or skip a question are often instinct driven, especially under time pressure. This leads to avoidable negative marking and inefficient time allocation.
+Under time pressure, attempt decisions are largely instinct driven. Students often attempt questions from weak areas, hesitate on solvable ones, and lose marks due to poor judgment rather than lack of knowledge.
 
-Current platforms, including Optima, focus on post-test analysis. However, they do not help users make better decisions during the test itself.
+Current platforms, including Optima, focus on post-test analysis. However, they do not support the most important layer, decision-making during the test itself.
 
 ---
 
 ## Why this matters
 
-CAT performance is not just about solving questions correctly, but about maximizing score through smart decision-making.
+CAT is not just a test of accuracy, but of decision quality under constraints.
 
-Users repeatedly highlighted:
+Users repeatedly described patterns such as:
 
-* “I knew this topic was weak but still attempted it”
-* “I waste time deciding whether to attempt or skip”
-* “I don’t have a clear plan before starting a section”
+* Attempting questions they knew were risky
+* Spending excessive time deciding whether to attempt or skip
+* Entering sections without a defined plan
 
-This reveals a gap between awareness and execution.
+These behaviors directly impact scores through negative marking and inefficient time allocation.
+
+This highlights a clear gap between awareness and execution.
 
 ---
 
 ## Solution
 
-This prototype converts a user’s accuracy profile into a clear, actionable attempt strategy.
+This prototype introduces a decision layer that translates a user’s accuracy profile into a structured attempt strategy.
 
-Instead of leaving decisions to instinct, it provides:
+Instead of relying on instinct, it provides:
 
-* A structured attempt plan
-* Clear prioritization of question types
-* Decision guidance under time pressure
+* Clear guidance on which questions to attempt, defer, or skip
+* Prioritized sequencing of question types
+* A repeatable framework for in-test decision-making
 
 ---
 
 ## How it works
 
-1. User inputs accuracy percentages for different question types
-2. The system calculates expected value based on CAT’s marking scheme
-3. Each question type is categorized into:
+1. Users input their accuracy across different question types
+2. The system calculates expected value using CAT’s +3 / -1 scoring
+3. Each question type is classified into:
 
    * Always attempt
    * Attempt if time permits
    * Skip
-4. A prioritized strategy is generated for the user
+4. A prioritized game plan is generated to guide execution
 
 ---
 
 ## Key Insight
 
-The core problem is not lack of preparation, but lack of decision structure.
+The core problem is not lack of preparation, but lack of structured decision-making.
 
-This product focuses on converting existing user awareness into actionable strategy during the test.
+Most aspirants already have the data needed to perform better. What’s missing is a system that converts that awareness into consistent, high-quality decisions under pressure.
 
 ---
 
 ## Integration with Optima
 
-This can fit directly after mock analysis as a “Build Your Strategy” layer.
+This can be integrated as a “Build Your Strategy” layer immediately after mock analysis.
 
-After showing performance insights, Optima can:
+After presenting performance insights, Optima can:
 
-* Translate accuracy data into decision strategies
-* Help users simulate attempt decisions
-* Improve real test performance, not just analysis
+* Translate accuracy metrics into actionable strategies
+* Enable users to simulate and internalize attempt decisions
+* Improve actual test outcomes, not just post-test understanding
 
-This shifts the product from insight generation to decision support.
+This shifts the product from analysis to real performance enablement.
 
 ---
 
 ## Tech Stack
 
-* Frontend only (React / JavaScript)
+* Frontend: React / JavaScript
 * No backend required
-* Expected value based logic
-* Local storage for state persistence
+* Expected value based decision logic
+* Local storage for lightweight persistence
 
 ---
 
 ## Note
 
-This is a working prototype built to demonstrate a real user problem and its solution. It is not production-ready, but focuses on delivering clear, actionable value.
+This is a working prototype built to demonstrate a real, user-validated problem and its solution. It is not production-ready, but focuses on delivering a high-impact decision-support layer that is currently missing in CAT preparation tools.
